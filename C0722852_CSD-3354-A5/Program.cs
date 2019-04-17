@@ -17,7 +17,7 @@ namespace C0722852_CSD_3354_A5
 
         public void MyFunctionA(string input)
         {
-            string[] words = input.Split('');
+            string[] words = input.Split(' ');
 
             int wordArrayLength = words.Length;
             int[] wordsLenth = new int[wordArrayLength];
@@ -31,12 +31,13 @@ namespace C0722852_CSD_3354_A5
             string nextWord;
             string longestWord = currentWord;
 
-            for (int y = 0; y  <words.Length - 1; y++)
+            for (int y = 0; y < words.Length - 1; y++)
+            {
                 currentWord = words[y];
                 nextWord = words[y + 1];
 
             }
         }
     }
-}
 
+}
